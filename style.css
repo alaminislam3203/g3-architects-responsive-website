@@ -113,6 +113,85 @@ main > section{
   font-weight: 500;
 
 }
+/* feture section related */
+
+#feture-section-title{
+
+border-left: 5px solid #FF900E;
+padding-left: 20px;
+}
+.features{
+  gap: 140px;
+}
+#experience-badge{
+  padding: 45px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: -92px;
+  margin-top: -77px;
+}
+#experience-year{
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.feture-card{
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+}
+.feture-card .feture-tittle{
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 0px;
+  margin-bottom: 0px
+}
+
+/* facts related style */
+.fact-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+.fact-card{
+  border: 1px solid #FF900E;
+  width: 240px;
+  height: 240px;
+  border-radius: 8px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.fact-number{
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.fact-name{
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.fact-description{
+  max-width: 540px;
+}
+
+.sponsor-info{
+  max-width: 540px;
+  margin: 50px auto;
+  text-align: center;
+}
+.sponsor-companies{
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+filter: grayscale(100%);
+
+
+}
+
 
 /* responsive media query */
 
@@ -122,8 +201,12 @@ main > section{
   .team{
 flex-direction: column;
  }
- .team-image-container{
+ .team-image-container, .fact-container{
   grid-template-columns: repeat(1, 1fr);
+ }
+
+ .fact-container{
+  gap: 24px;
  }
  .our-feature{
   margin-left: 18px;
